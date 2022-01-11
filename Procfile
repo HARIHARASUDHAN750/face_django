@@ -1,1 +1,1 @@
-web: gunicorn face_pro.wsgi --log-file -
+web: gunicorn myproject.wsgi
