@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import django_heroku
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 temp_dir = os.path.join(BASE_DIR,'face_app/templates')
@@ -24,7 +23,7 @@ stat_dir = os.path.join(BASE_DIR,'face_app/static')
 SECRET_KEY = '7oq2i^gic+48xdeqzk4v%iuu@s(ic8+cqlb4t^17y$bx47)h6v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = false
 
 ALLOWED_HOSTS = ['prajvalsudhir-facemask.herokuapp.com','127.0.0.1']
 
@@ -126,4 +125,4 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-django_heroku.settings(locals())
+
